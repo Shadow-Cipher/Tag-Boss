@@ -7,3 +7,6 @@ To allow the user to manipulate various elements on the page by way of their HTM
 
 # Regarding Chrome Extensions
 The file called "content.js" is the file that is loaded automatically when a web page is loaded. This is the main extension file. The other files are called by this file. There are four icon files as well, different sizes.
+
+# Document Object Model
+This extension relies heavily on the DOM. Much of the JavaScript references the DOM, or manipulates the page by way of the DOM.
