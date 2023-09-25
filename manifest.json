@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "description": 
+        "This application is for extracting data from various tags or contained within certain tags on a page.\n\n For the time being, only the data is extracted from within the tags, no formatting information is retained except for some html tags if contained within the particular data you're extracting. This is plain text that is returned or HTML, but in any case in the format of a text string.",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "name": "Tag Boss HTML",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js",
+                "popup.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
+ 
+
+
+
+
+
+
