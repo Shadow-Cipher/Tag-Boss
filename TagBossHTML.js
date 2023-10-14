@@ -34,7 +34,7 @@ TagBossHTML.Common.adjustElementPosition = function (element, xPosition, yPositi
             xPosition = 0;
         }
 
-        // If the y position is less than 0
+        // If the y position is less than 0 then change it to 0
         if (yPosition < 0) {
             yPosition = 0;
         }
@@ -99,6 +99,7 @@ TagBossHTML.Common.contains = function (array, element) {
 };
 
 // Removes all child elements from an element
+//    (ie, removes all childNodes)
 TagBossHTML.Common.empty = function (element) {
     // If the element is set
     if (element) {
